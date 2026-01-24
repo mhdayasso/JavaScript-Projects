@@ -1,2 +1,2 @@
 console.log("main.js loaded ✅");
-alert("Alert from main.js ✅");
+window.alert("Hello! This is window.alert() ✅");
