@@ -1,48 +1,47 @@
 // Project 3: Math Operators
 // Each function runs when you click its matching paragraph in index.html.
 
-// Addition operation
+// + Addition
 function additionFunction() {
   var result = 10 + 5;
   document.getElementById("MathAdd").textContent = "10 + 5 = " + result;
 }
 
-// Subtraction operation
+// - Subtraction
 function subtractionFunction() {
   var result = 10 - 5;
   document.getElementById("MathSub").textContent = "10 - 5 = " + result;
 }
 
-// Multiplication operation
+// * Multiplication
 function multiplicationFunction() {
   var result = 10 * 5;
   document.getElementById("MathMul").textContent = "10 * 5 = " + result;
 }
 
-// Division operation
-function divisionFunction() {
-  var result = 10 / 5;
-  document.getElementById("MathDiv").textContent = "10 / 5 = " + result;
-}
-
-// Multiple mathematical operations at once
-function multipleOperations() {
-  var a = 20;
-  var b = 4;
-
-  var add = a + b;
-  var sub = a - b;
-  var mul = a * b;
-  var div = a / b;
-
-  document.getElementById("MathAll").innerHTML =
-    a + " + " + b + " = " + add + "<br>" +
-    a + " - " + b + " = " + sub + "<br>" +
-    a + " * " + b + " = " + mul + "<br>" +
-    a + " / " + b + " = " + div;
-}
-
+// % Modulus (remainder)
 function modulusFunction() {
-  var result = 10 % 3;
+  var result = 10 % 3; // remainder is 1
   document.getElementById("MathMod").textContent = "10 % 3 = " + result;
+}
+
+// ++ Increment
+function incrementFunction() {
+  var number = 5;
+  number++; // increment operator
+  document.getElementById("MathInc").textContent = "After increment: " + number;
+}
+
+// -- Decrement
+function decrementFunction() {
+  var number = 5;
+  number--; // decrement operator
+  document.getElementById("MathDec").textContent = "After decrement: " + number;
+}
+
+// Math.random() (0 to 1)
+function randomFunction() {
+  var randomNum = Math.random();
+  document.getElementById("MathRandom").textContent =
+    "Random number (0 to 1): " + randomNum;
 }
