@@ -1,4 +1,4 @@
-# JavaScri# JavaScript Projects
+# JavaScript Projects
 
 This repository contains my coding projects, assignments, and challenges completed during my JavaScript course.
 
@@ -8,5 +8,3 @@ This repository contains my coding projects, assignments, and challenges complet
 - A final portfolio project using HTML, CSS, and JavaScript
 
 I will regularly push updates as I progress through the course.
-pt-Projects
-Projects and assignments from my JavaScript course.
