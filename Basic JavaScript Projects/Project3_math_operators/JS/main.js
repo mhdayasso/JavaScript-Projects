@@ -1,7 +1,11 @@
-// Project 3: Math Operators
-// This function performs an addition operation and displays the result in the HTML paragraph.
-
+// Addition operation: adds two numbers and displays the result
 function additionFunction() {
-  var result = 10 + 5; // addition operation
-  document.getElementById("Math").textContent = "10 + 5 = " + result;
+  var result = 10 + 5;
+  document.getElementById("MathAdd").textContent = "10 + 5 = " + result;
+}
+
+// Subtraction operation: subtracts two numbers and displays the result
+function subtractionFunction() {
+  var result = 10 - 5;
+  document.getElementById("MathSub").textContent = "10 - 5 = " + result;
 }
