@@ -1,0 +1,94 @@
+html {
+  font-size: 70%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.calculator {
+  border: 1.2px solid darkslategray;
+  border-radius: 10px;
+  width: 520px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+}
+
+/* Display bar */
+.calculator-screen {
+  background: #000;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+#display {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+/* Grid for buttons */
+.calculator-keys {
+  background: #f3f3f3;
+  padding: 18px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 86px;
+  gap: 18px;
+}
+
+.key {
+  font-size: 3.2rem;
+  border: 1px solid #8aa;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.key:active {
+  transform: translateY(1px);
+}
+
+/* Operator buttons */
+.operator {
+  background: linear-gradient(#dcdcdc, #9a9a9a);
+  font-weight: 700;
+}
+
+/* Equals spans 4 rows */
+.equals {
+  grid-column: 4;
+  grid-row: 2 / span 4;
+  background: #0b2cff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+/* Bottom row special buttons */
+.clear {
+  background: #e40000;
+  color: #fff;
+  font-weight: 700;
+}
+
+.zero {
+  /* keep it normal width; screenshot shows 0 is not spanning */
+}

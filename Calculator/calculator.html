@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Calculator</title>
+  <meta name="description" content="A basic HTML, CSS and JavaScript Calculator" />
+  <meta name="author" content="Your Name Here.." />
+
+  <link rel="stylesheet" href="CSS/Calculator_CSS.css" />
+  <script src="Javascript/Calculator_Javascript.js" defer></script>
+</head>
+
+<body>
+  <div class="calculator">
+
+    <!-- Display -->
+    <div class="calculator-screen">
+      <div id="display">0</div>
+    </div>
+
+    <!-- Keys -->
+    <div class="calculator-keys">
+
+      <!-- Row 1: operators -->
+      <button class="key operator" data-action="add">+</button>
+      <button class="key operator" data-action="subtract">−</button>
+      <button class="key operator" data-action="multiply">×</button>
+      <button class="key operator" data-action="divide">÷</button>
+
+      <!-- Row 2 -->
+      <button class="key" data-number="7">7</button>
+      <button class="key" data-number="8">8</button>
+      <button class="key" data-number="9">9</button>
+
+      <!-- Big equals (spans 4 rows) -->
+      <button class="key equals" data-action="equals">=</button>
+
+      <!-- Row 3 -->
+      <button class="key" data-number="4">4</button>
+      <button class="key" data-number="5">5</button>
+      <button class="key" data-number="6">6</button>
+
+      <!-- Row 4 -->
+      <button class="key" data-number="1">1</button>
+      <button class="key" data-number="2">2</button>
+      <button class="key" data-number="3">3</button>
+
+      <!-- Row 5 -->
+      <button class="key zero" data-number="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key clear" data-action="clear">AC</button>
+
+    </div>
+  </div>
+</body>
+</html>
