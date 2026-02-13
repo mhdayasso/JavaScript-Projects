@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jQuery Demo</title>
+
+  <!-- This loads the jQuery library from a CDN (online source). -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <style>
+    /* Basic styling just to make changes obvious */
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #panel {
+      display: none;            /* hidden first (slideDown will show it) */
+      padding: 12px;
+      margin-top: 10px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      width: fit-content;
+    }
+    button { margin-right: 10px; padding: 8px 12px; }
+  </style>
+</head>
+
+<body>
+  <!-- This is the page heading. We'll also change its color using jQuery. -->
+  <h1 id="title">My jQuery Practice Page</h1>
+
+  <!-- These buttons trigger jQuery actions (hide/show/toggle/fade/slide). -->
+  <button id="hideBtn">Hide Title</button>
+  <button id="showBtn">Show Title</button>
+  <button id="toggleBtn">Toggle Panel</button>
+  <button id="fadeBtn">Fade Title</button>
+
+  <!-- This is a panel that will slide open/closed using jQuery. -->
+  <div id="panel">
+    <strong>jQuery Panel:</strong> This box slides up/down.
+  </div>
+
+  <!-- This script runs after the page loads and sets up click events with jQuery. -->
+  <script>
+    // Wait until the HTML is fully loaded before running jQuery code.
+    $(document).ready(function () {
+
+      // Hide the title when "Hide Title" is clicked.
+      $("#hideBtn").click(function () {
+        $("#title").hide();
+      });
+
+      // Show the title when "Show Title" is clicked.
+      $("#showBtn").click(function () {
+        $("#title").show();
+      });
+
+      // Slide toggle the panel open/closed when "Toggle Panel" is clicked.
+      $("#toggleBtn").click(function () {
+        $("#panel").slideToggle();
+      });
+
+      // Fade the title out, then fade it back in when "Fade Title" is clicked.
+      $("#fadeBtn").click(function () {
+        $("#title").fadeOut(400).fadeIn(400);
+      });
+
+      // Example of changing CSS with jQuery on page load.
+      $("#title").css("color", "#1a5cff");
+    });
+  </script>
+</body>
+</html>
